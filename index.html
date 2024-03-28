@@ -10,9 +10,9 @@
     <main class="main">
         <section class="section-left">
             <h1>Comece seus estudos na <br><span>programação</span> agora</h1>
-            <img src="/Images/programming-animate.svg" class="left-image" alt="img">
+            <img src="./assets/programming-animate.svg" class="left-image" alt="img">
         </section>
-        <section class="section-right">
+        <section class="section-right" id="login-section">
             <div class="card">
                 <p>LOGIN</p>
                 <div class="textfield">
@@ -21,11 +21,20 @@
                 </div>
                 <div class="textfield">
                     <label for="passwd">Senha</label>
-                    <input type="text" name="passwd" id="passwd" placeholder="Senha">
+                    <input type="password" name="passwd" id="passwd" placeholder="Senha">
                 </div>
-                <button class="login-button">LOGIN</button>
+                <button type="submit" class="login-button" onclick="Validate()">LOGIN</button>
             </div>
         </section>
+
+        <section class="section-left welcome" style="display: none;" id="welcome-section">
+            <h3 id="message-name"> </h3>
+            <p class="text-welcome">Esse é um ótimo guia na carreira de programação:</p>
+            <img class="img-welcome" src="assets/Component 1.svg" alt="tech">
+        </section>
     </main>
+    
+
+    <script src="./script.js"></script>
 </body>
 </html>
