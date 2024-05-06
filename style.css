@@ -162,5 +162,9 @@ span{
     .left-image{
         width: 60vw;
     }
+
+    .img-welcome{
+        width: 100%;
+    }
 }
 
